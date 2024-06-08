@@ -2,8 +2,14 @@
 producto en euros con dos decimales y muestre por pantalla el número de euros y 
 el número de céntimos del precio introducido.'''
 
-precio = str(input("Introduzca el precio del producto: "))
-euros = precio.split(".")[0]
-centimos = precio.split(".")[1]
+#Pedir al usuario que introduzca el precio
+precio = str(input('Introduzca el precio: '))
 
-print(f'El precio del producto es: {euros} euros con {centimos} céntimos')
+#Obtener los euros y los centimos
+euros = precio.split(".")[0]
+centimos= precio.split(".")[1]
+
+#Mostrar en la consola el resultado
+
+print(f'El precio del producto son {euros} euros con {centimos} céntimos')
+

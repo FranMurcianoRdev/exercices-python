@@ -2,17 +2,18 @@
 y después muestre por pantalla
 la misma frase pero con la vocal introducida en mayúscula'''
 
-# Pedir al usuario que introduzca una frase
-frase = input("Introduce una frase: ")
 
-# Pedir al usuario que introduzca una vocal
-vocal = input("Introduce una vocal: ")
+#Pedir al usuario que introduzca una frase 
+frase = str(input("Introduzca una frase: "))
 
-# Convertir la vocal a mayúscula
+#Pedir al usuario que introduzca una vocal
+vocal = str.lower((input("Introduzca una vocal para sustituir: ")))
+
+#transformar la vocal en mayúscula 
 vocal_mayuscula = vocal.upper()
 
-# Reemplazar todas las ocurrencias de la vocal para la vocal en mayuscula
-frase_modificada = frase.replace(vocal, vocal_mayuscula)
+#Reemplazar todas las vocales seleccionadas que haya en la frase por la nueva vocal en mayúscula
+nueva_frase = frase.replace(vocal, vocal_mayuscula)
 
-# Mostrar la frase modificada por pantalla
-print(frase_modificada)
+#Mostrar en pantalla la nueva frase
+print(nueva_frase)

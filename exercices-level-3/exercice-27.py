@@ -2,14 +2,14 @@
 muestre por pantalla otro correo electrónico con el mismo nombre 
 (la parte delante de la arroba @) pero con dominio ceu.es.'''
 
-# Pedir al usuario que introduzca su correo electrónico
-email = input("Introduzca su correo electrónico: ")
+#Pedir el correo electrónico
+email = str(input('Introduce el correo electrónico: '))
 
-# Separar el nombre del usuario y el dominio antiguo, nos quedamos con la primera parte solo ([0])
-nombre_usuario = email.split('@')[0]
+#Crear nuevo dominio
+nuevo_dominio = '@ceu.es'
 
-# Crear el nuevo correo electrónico con el dominio "ceu.es"
-nuevo_correo = nombre_usuario + "@ceu.es"
+#Crear nuevo email, seleccionando solo la primera parte del introducido por el usuario.
+nuevo_email = email.split('@')[0] + nuevo_dominio
 
-# Mostrar el nuevo correo electrónico por pantalla
-print(nuevo_correo)
+#mostrar en pantalla el nuevo email 
+print(nuevo_email)
